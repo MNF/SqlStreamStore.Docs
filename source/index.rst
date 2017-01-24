@@ -45,7 +45,7 @@ Key Design Considerations
  - JSON only message and metadatada payloads. Actually, technically, string only.
    Feedback from NEventStore time has shown most people used JSON serializer
    and when they didn't, they regret not being able to splunk the DB using
-   off-the-shelf database management tools. Other serialization formats brought
+   off-the-shelf database management tools. Other serialization formats bring
    questionable value when used with an RDMBS. 
  - No object serialization in API. This is to encourage consideration of weak 
    typing / serialization and different approaches to event / message / stream
@@ -74,22 +74,19 @@ SQL Stream Store has policy of correctness first, then performance. It is
 your responsibility to understand the needs of your application and profile
 is characteristics to see if SQL Stream Store is suitable for your needs.
 
-If you do need high performance messaging, you probably shouldn't be doing so
-via a relational database anyway :)
+If you do need high performance streams/ messages / events, you probably shouldn't
+be doing so via a relational database anyway :)
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   index
    quickstart
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   appending
+   reading
+   metadata
+   deleting
+   logging
 
 .. _NEventStore: http://neventstore.org
 .. _EventStore: https://geteventstore.org
