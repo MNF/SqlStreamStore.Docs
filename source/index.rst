@@ -6,7 +6,7 @@
 Welcome to SQL Stream Store's documentation!
 ============================================
 
-SQL Stream Store is a libray to help to you build stream orientated (event sourced) applications. It is build based
+[SQL Stream Store](https://github.com/SQLStreamStore/SQLStreamStore) is a library to help to you build stream orientated (event sourced) applications. It is build based
 on experience from years of using and maintaining NEventStore and gratefully :strike:`steals` borrows from EventStore's API.
 
 
